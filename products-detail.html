@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Details — Brand</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/products.css" />
+  <link rel="stylesheet" href="css/product-details.css" />
+</head>
+<body>
+
+<div id="page-wrapper">
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="container-xl">
+      <div class="d-flex align-items-center gap-4">
+        <a href="index.html" class="brand-logo flex-shrink-0" style="width:220px;">
+          <div class="logo-icon"><i class="bi bi-bag-fill"></i></div>
+          Brand
+        </a>
+        <div class="flex-grow-1 d-flex justify-content-center">
+          <div class="search-bar" style="width:100%; max-width:520px;">
+            <input type="text" placeholder="Search" />
+            <select class="category-select">
+              <option>All category</option>
+              <option selected>Electronics</option>
+              <option>Clothes &amp; Wear</option>
+              <option>Home Interiors</option>
+              <option>Computer &amp; Tech</option>
+              <option>Tools &amp; Equipment</option>
+              <option>Sports &amp; Outdoor</option>
+              <option>Animal &amp; Pets</option>
+              <option>Machinery Tools</option>
+              <option>Automobiles</option>
+            </select>
+            <button class="btn-search">Search</button>
+          </div>
+        </div>
+        <div class="nav-icons flex-shrink-0" style="width:220px; justify-content:flex-end;">
+          <a href="#" class="nav-icon-item"><i class="bi bi-person"></i><span>Profile</span></a>
+          <a href="#" class="nav-icon-item"><i class="bi bi-chat-square-dots"></i><span>Message</span></a>
+          <a href="#" class="nav-icon-item"><i class="bi bi-clipboard-check"></i><span>Orders</span></a>
+          <a href="#" class="nav-icon-item"><i class="bi bi-cart3"></i><span>My cart</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN NAVBAR -->
+  <nav class="main-navbar">
+    <div class="container-xl">
+      <div class="navbar-inner">
+        <div class="nav-left">
+          <button class="all-category-btn">
+            <i class="bi bi-list" style="font-size:18px;"></i>All category
+          </button>
+          <ul class="nav-links">
+            <li><a href="#">Hot offers</a></li>
+            <li><a href="#">Gift boxes</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Menu item</a></li>
+            <li><a href="#" class="d-flex align-items-center gap-1">Help <i class="bi bi-chevron-down" style="font-size:10px;"></i></a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <div class="d-flex align-items-center gap-1">
+            <select><option>English, USD</option><option>Arabic, AED</option><option>French, EUR</option></select>
+            <i class="bi bi-chevron-down" style="font-size:10px;color:var(--text-muted);"></i>
+          </div>
+          <div class="ship-to">
+            <span>Ship to</span>
+            <span style="font-size:18px;">🇩🇪</span>
+            <i class="bi bi-chevron-down" style="font-size:10px;color:var(--text-muted);"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb-bar">
+    <div class="container-xl">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Clothing</a></li>
+        <li class="breadcrumb-item"><a href="#">Men's wear</a></li>
+        <li class="breadcrumb-item active" id="bc-product-name">Summer Muscle</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- PRODUCT DETAIL MAIN -->
+  <main class="pd-main">
+    <div class="container-xl">
+
+      <!-- TOP PRODUCT SECTION -->
+      <div class="pd-top-section">
+
+        <!-- IMAGE GALLERY -->
+        <div class="pd-gallery">
+          <div class="pd-main-img-wrap">
+            <img id="pdMainImage" src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600&h=600&fit=crop" alt="Product Main" />
+            <span class="pd-stock-badge"><i class="bi bi-check-circle-fill"></i> In stock</span>
+          </div>
+          <div class="pd-thumbs">
+            <div class="pd-thumb active" data-img="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600&h=600&fit=crop">
+              <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=80&h=80&fit=crop" alt="View 1" />
+            </div>
+            <div class="pd-thumb" data-img="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=600&h=600&fit=crop">
+              <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=80&h=80&fit=crop" alt="View 2" />
+            </div>
+            <div class="pd-thumb" data-img="https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=600&h=600&fit=crop">
+              <img src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=80&h=80&fit=crop" alt="View 3" />
+            </div>
+            <div class="pd-thumb" data-img="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&h=600&fit=crop">
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=80&h=80&fit=crop" alt="View 4" />
+            </div>
+            <div class="pd-thumb" data-img="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&h=600&fit=crop">
+              <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=80&h=80&fit=crop" alt="View 5" />
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCT INFO -->
+        <div class="pd-info">
+          <h1 class="pd-title" id="pd-product-title">Mens Long Sleeve T-shirt Cotton Base Layer Slim Muscle</h1>
+
+          <div class="pd-rating-row">
+            <div class="pd-stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+            </div>
+            <span class="pd-rating-val">9.3</span>
+            <span class="pd-rating-sep">|</span>
+            <a href="#reviews" class="pd-review-link">32 reviews</a>
+            <span class="pd-rating-sep">|</span>
+            <span class="pd-orders">154 sold</span>
+          </div>
+
+          <!-- Price tiers -->
+          <div class="pd-price-tiers">
+            <div class="pd-price-tier active">
+              <div class="tier-price">$89.00</div>
+              <div class="tier-range">100-149 pcs</div>
+            </div>
+            <div class="pd-price-tier">
+              <div class="tier-price">$90.00</div>
+              <div class="tier-range">150-249 pcs</div>
+            </div>
+            <div class="pd-price-tier">
+              <div class="tier-price">$78.00</div>
+              <div class="tier-range">250+ pcs</div>
+            </div>
+          </div>
+
+          <!-- Specs table -->
+          <div class="pd-specs">
+            <div class="pd-spec-row">
+              <span class="pd-spec-label">Price</span>
+              <span class="pd-spec-val">Negotiable</span>
+            </div>
+            <div class="pd-spec-row">
+              <span class="pd-spec-label">Type</span>
+              <span class="pd-spec-val">Classic shoes</span>
+            </div>
+            <div class="pd-spec-row">
+              <span class="pd-spec-label">Material</span>
+              <span class="pd-spec-val">Plastic material</span>
+            </div>
+            <div class="pd-spec-row">
+              <span class="pd-spec-label">Design</span>
+              <span class="pd-spec-val">Modern nice</span>
+            </div>
+            <div class="pd-spec-row">
+              <span class="pd-spec-label">Customization</span>
+              <span class="pd-spec-val">Customized logo and design packages</span>
+            </div>
+            <div class="pd-spec-row">
+              <span class="pd-spec-label">Protection</span>
+              <span class="pd-spec-val">Refund Policy</span>
+            </div>
+            <div class="pd-spec-row">
+              <span class="pd-spec-label">Warranty</span>
+              <span class="pd-spec-val">3 years full warranty</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SELLER CARD -->
+        <div class="pd-seller-card">
+          <div class="seller-avatar">R</div>
+          <div class="seller-name">Supplier<br><strong>GuardTail Trading LLC</strong></div>
+          <div class="seller-meta">
+            <div class="seller-meta-item"><i class="bi bi-geo-alt-fill"></i> Germany, Berlin</div>
+            <div class="seller-meta-item verified"><i class="bi bi-patch-check-fill"></i> Verified Seller</div>
+            <div class="seller-meta-item"><i class="bi bi-truck"></i> Worldwide shipping</div>
+          </div>
+          <button class="btn-inquiry">Send inquiry</button>
+          <a href="#" class="seller-profile-link"><i class="bi bi-heart"></i> Seller's profile</a>
+          <a href="#" class="btn-save-later"><i class="bi bi-bookmark"></i> Save for later</a>
+        </div>
+
+      </div><!-- /.pd-top-section -->
+
+      <!-- TABS + DESCRIPTION -->
+      <div class="pd-tabs-section">
+        <div class="pd-tabs">
+          <button class="pd-tab active" data-tab="description">Description</button>
+          <button class="pd-tab" data-tab="reviews">Reviews</button>
+          <button class="pd-tab" data-tab="shipping">Shipping</button>
+          <button class="pd-tab" data-tab="about">About seller</button>
+        </div>
+
+        <div class="pd-tab-content" id="tab-description">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud.</p>
+          <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident deserunt.</p>
+
+          <div class="pd-specs-table">
+            <table>
+              <tbody>
+                <tr><td class="spec-key">Model</td><td class="spec-val">#8786867</td></tr>
+                <tr><td class="spec-key">Style</td><td class="spec-val">Classic style</td></tr>
+                <tr><td class="spec-key">Certificate</td><td class="spec-val">ISO-9001:2015</td></tr>
+                <tr><td class="spec-key">Size</td><td class="spec-val">34mm x 450mm x 98mm</td></tr>
+                <tr><td class="spec-key">Memory</td><td class="spec-val">56GB RAM</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <ul class="pd-features">
+            <li><i class="bi bi-check2"></i> Some great feature name here</li>
+            <li><i class="bi bi-check2"></i> Lorem ipsum dolor sit amet consectetur</li>
+            <li><i class="bi bi-check2"></i> Duis aute irure dolor in reprehenderit</li>
+            <li><i class="bi bi-check2"></i> Some great feature name here</li>
+          </ul>
+        </div>
+
+        <div class="pd-tab-content d-none" id="tab-reviews">
+          <p>Customer reviews will appear here.</p>
+        </div>
+        <div class="pd-tab-content d-none" id="tab-shipping">
+          <p>Shipping details will appear here.</p>
+        </div>
+        <div class="pd-tab-content d-none" id="tab-about">
+          <p>Information about the seller will appear here.</p>
+        </div>
+      </div>
+
+      <!-- RELATED PRODUCTS -->
+      <div class="pd-related-section">
+        <h2 class="pd-related-title">Related products</h2>
+        <div class="pd-related-grid">
+
+          <div class="pd-related-card">
+            <div class="prc-img">
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=200&h=160&fit=crop" alt="Smart Watch" />
+            </div>
+            <div class="prc-body">
+              <div class="prc-price">$32.00–$48.00</div>
+              <div class="prc-name">Xiaomi Redmi 9 Original</div>
+            </div>
+          </div>
+
+          <div class="pd-related-card">
+            <div class="prc-img">
+              <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=200&h=160&fit=crop" alt="Laptop" />
+            </div>
+            <div class="prc-body">
+              <div class="prc-price">$33.00–$80.00</div>
+              <div class="prc-name">Xiaomi Redmi 8 Original</div>
+            </div>
+          </div>
+
+          <div class="pd-related-card">
+            <div class="prc-img">
+              <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=200&h=160&fit=crop" alt="Camera" />
+            </div>
+            <div class="prc-body">
+              <div class="prc-price">$31.00–$100.00</div>
+              <div class="prc-name">Xiaomi Redmi 9 Original</div>
+            </div>
+          </div>
+
+          <div class="pd-related-card">
+            <div class="prc-img">
+              <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=200&h=160&fit=crop" alt="Jeans" />
+            </div>
+            <div class="prc-body">
+              <div class="prc-price">$70.00–$48.00</div>
+              <div class="prc-name">Xiaomi Redmi 8 Original</div>
+            </div>
+          </div>
+
+          <div class="pd-related-card">
+            <div class="prc-img">
+              <img src="https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=200&h=160&fit=crop" alt="Blender" />
+            </div>
+            <div class="prc-body">
+              <div class="prc-price">$12.00–$45.03</div>
+              <div class="prc-name">Xiaomi Redmi 8 Original</div>
+            </div>
+          </div>
+
+          <div class="pd-related-card">
+            <div class="prc-img">
+              <img src="https://images.unsplash.com/photo-1547949003-9792a18a2601?w=200&h=160&fit=crop" alt="Wallet" />
+            </div>
+            <div class="prc-body">
+              <div class="prc-price">$22.00–$32.00</div>
+              <div class="prc-name">Xiaomi Redmi 8 Original</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SUPER DISCOUNT BANNER -->
+      <div class="pd-discount-banner">
+        <div class="pdb-left">
+          <div class="pdb-title">Super discount on more than 100 USD</div>
+          <div class="pdb-sub">Have you ever finally just <strong>write dummy info</strong></div>
+        </div>
+        <button class="pdb-btn">Shop now</button>
+      </div>
+
+    </div><!-- /.container-xl -->
+  </main>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter-section">
+    <div class="container-xl">
+      <h3>Subscribe on our newsletter</h3>
+      <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+      <form class="newsletter-form" onsubmit="return false;">
+        <input type="email" placeholder="✉  Email" />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container-xl">
+      <div class="row g-4">
+        <div class="col-lg-2 col-md-4">
+          <div class="brand-footer"><div class="logo-icon"><i class="bi bi-bag-fill"></i></div>Brand</div>
+          <p>Best information about the company goes here but now lorem ipsum is</p>
+          <div class="footer-social">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4"><h5>About</h5><ul><li><a href="#">About Us</a></li><li><a href="#">Find store</a></li><li><a href="#">Categories</a></li><li><a href="#">Blogs</a></li></ul></div>
+        <div class="col-lg-2 col-md-4"><h5>Partnership</h5><ul><li><a href="#">About Us</a></li><li><a href="#">Find store</a></li><li><a href="#">Categories</a></li><li><a href="#">Blogs</a></li></ul></div>
+        <div class="col-lg-2 col-md-4"><h5>Information</h5><ul><li><a href="#">Help Center</a></li><li><a href="#">Money Refund</a></li><li><a href="#">Shipping</a></li><li><a href="#">Contact us</a></li></ul></div>
+        <div class="col-lg-2 col-md-4"><h5>For users</h5><ul><li><a href="#">Login</a></li><li><a href="#">Register</a></li><li><a href="#">Settings</a></li><li><a href="#">My Orders</a></li></ul></div>
+        <div class="col-lg-2 col-md-4">
+          <h5>Get app</h5>
+          <div class="footer-app-btns">
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/180px-Download_on_the_App_Store_Badge.svg.png" alt="App Store" style="height:38px;" /></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/180px-Google_Play_Store_badge_EN.svg.png" alt="Google Play" style="height:38px;" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2023 Ecommerce.</p>
+        <p class="d-flex align-items-center gap-2">🇺🇸 English <i class="bi bi-chevron-up" style="font-size:10px;"></i></p>
+      </div>
+    </div>
+  </footer>
+
+</div><!-- /#page-wrapper -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+  // ── Image gallery thumbnails ──
+  const thumbs = document.querySelectorAll('.pd-thumb');
+  const mainImg = document.getElementById('pdMainImage');
+  thumbs.forEach(thumb => {
+    thumb.addEventListener('click', () => {
+      thumbs.forEach(t => t.classList.remove('active'));
+      thumb.classList.add('active');
+      mainImg.src = thumb.dataset.img;
+    });
+  });
+
+  // ── Tabs ──
+  const tabs = document.querySelectorAll('.pd-tab');
+  const tabContents = document.querySelectorAll('.pd-tab-content');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const target = tab.dataset.tab;
+      tabContents.forEach(tc => {
+        tc.id === 'tab-' + target ? tc.classList.remove('d-none') : tc.classList.add('d-none');
+      });
+    });
+  });
+
+  // ── Price tier selection ──
+  const tiers = document.querySelectorAll('.pd-price-tier');
+  tiers.forEach(tier => {
+    tier.addEventListener('click', () => {
+      tiers.forEach(t => t.classList.remove('active'));
+      tier.classList.add('active');
+    });
+  });
+
+  // ── Related product cards → navigate to detail ──
+  document.querySelectorAll('.pd-related-card').forEach(card => {
+    card.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+
+  // ── Read product data from URL params (passed from products page) ──
+  const params = new URLSearchParams(window.location.search);
+  const title = params.get('title');
+  const img   = params.get('img');
+  const price = params.get('price');
+
+  if (title) {
+    document.getElementById('pd-product-title').textContent = title;
+    document.getElementById('bc-product-name').textContent = title;
+  }
+  if (img) {
+    mainImg.src = img;
+    document.querySelector('.pd-thumb.active img').src = img;
+    document.querySelector('.pd-thumb.active').dataset.img = img;
+  }
+  if (price) {
+    document.querySelector('.tier-price').textContent = price;
+  }
+
+  // ── Send inquiry button ──
+  document.querySelector('.btn-inquiry').addEventListener('click', () => {
+    alert('Inquiry sent to supplier! (Connect to a backend to enable live inquiries)');
+  });
+});
+</script>
+</body>
+</html>
