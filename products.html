@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobile Accessories — Brand</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/products.css" />
+</head>
+<body>
+
+<div id="page-wrapper">
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="container-xl">
+      <div class="d-flex align-items-center gap-4">
+        <a href="index.html" class="brand-logo flex-shrink-0" style="width:220px;">
+          <div class="logo-icon"><i class="bi bi-bag-fill"></i></div>
+          Brand
+        </a>
+        <div class="flex-grow-1 d-flex justify-content-center">
+          <div class="search-bar" style="width:100%; max-width:520px;">
+            <input type="text" placeholder="Search" />
+            <select class="category-select">
+              <option>All category</option>
+              <option selected>Electronics</option>
+              <option>Clothes & Wear</option>
+              <option>Home Interiors</option>
+              <option>Computer & Tech</option>
+              <option>Tools & Equipment</option>
+              <option>Sports & Outdoor</option>
+              <option>Animal & Pets</option>
+              <option>Machinery Tools</option>
+              <option>Automobiles</option>
+            </select>
+            <button class="btn-search">Search</button>
+          </div>
+        </div>
+        <div class="nav-icons flex-shrink-0" style="width:220px; justify-content:flex-end;">
+          <a href="#" class="nav-icon-item"><i class="bi bi-person"></i><span>Profile</span></a>
+          <a href="#" class="nav-icon-item"><i class="bi bi-chat-square-dots"></i><span>Message</span></a>
+          <a href="#" class="nav-icon-item"><i class="bi bi-clipboard-check"></i><span>Orders</span></a>
+          <a href="#" class="nav-icon-item"><i class="bi bi-cart3"></i><span>My cart</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN NAVBAR -->
+  <nav class="main-navbar">
+    <div class="container-xl">
+      <div class="navbar-inner">
+        <div class="nav-left">
+          <button class="all-category-btn">
+            <i class="bi bi-list" style="font-size:18px;"></i>All category
+          </button>
+          <ul class="nav-links">
+            <li><a href="#">Hot offers</a></li>
+            <li><a href="#">Gift boxes</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Menu item</a></li>
+            <li><a href="#" class="d-flex align-items-center gap-1">Help <i class="bi bi-chevron-down" style="font-size:10px;"></i></a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <div class="d-flex align-items-center gap-1">
+            <select><option>English, USD</option><option>Arabic, AED</option><option>French, EUR</option></select>
+            <i class="bi bi-chevron-down" style="font-size:10px;color:var(--text-muted);"></i>
+          </div>
+          <div class="ship-to">
+            <span>Ship to</span>
+            <span style="font-size:18px;">🇩🇪</span>
+            <i class="bi bi-chevron-down" style="font-size:10px;color:var(--text-muted);"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb-bar">
+    <div class="container-xl">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Clothing</a></li>
+        <li class="breadcrumb-item"><a href="#">Men's wear</a></li>
+        <li class="breadcrumb-item active">Mobile accessory</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main class="products-main">
+    <div class="container-xl">
+      <div class="d-flex gap-3 align-items-start">
+
+        <!-- SIDEBAR FILTERS -->
+        <aside class="filters-sidebar">
+
+          <div class="filter-section">
+            <div class="filter-title">Category</div>
+            <ul class="filter-list">
+              <li><a href="#" class="active">Mobile accessory</a></li>
+              <li><a href="#">Electronics</a></li>
+              <li><a href="#">Smartphones</a></li>
+              <li><a href="#">Modern Tech</a></li>
+            </ul>
+            <a href="#" class="see-all-link">See all</a>
+          </div>
+
+          <div class="filter-section">
+            <div class="filter-title">Brands</div>
+            <ul class="filter-check-list">
+              <li><label class="filter-check"><input type="checkbox" checked /> Samsung</label></li>
+              <li><label class="filter-check"><input type="checkbox" /> Apple</label></li>
+              <li><label class="filter-check"><input type="checkbox" /> Huawei</label></li>
+              <li><label class="filter-check"><input type="checkbox" /> Pocco</label></li>
+              <li><label class="filter-check"><input type="checkbox" /> Lenovo</label></li>
+            </ul>
+            <a href="#" class="see-all-link">See all</a>
+          </div>
+
+          <div class="filter-section">
+            <div class="filter-title">Features</div>
+            <ul class="filter-check-list">
+              <li><label class="filter-check"><input type="checkbox" checked /> Metallic</label></li>
+              <li><label class="filter-check"><input type="checkbox" /> Plastic cover</label></li>
+              <li><label class="filter-check"><input type="checkbox" /> 8GB Ram</label></li>
+              <li><label class="filter-check"><input type="checkbox" /> Super power</label></li>
+              <li><label class="filter-check"><input type="checkbox" /> Large Memory</label></li>
+            </ul>
+            <a href="#" class="see-all-link">See all</a>
+          </div>
+
+          <div class="filter-section">
+            <div class="filter-title">Price range</div>
+            <div class="price-range-inputs">
+              <div class="price-input-wrap">
+                <label>Min</label>
+                <input type="number" placeholder="0" class="price-input" />
+              </div>
+              <div class="price-input-wrap">
+                <label>Max</label>
+                <input type="number" placeholder="99999" class="price-input" />
+              </div>
+            </div>
+            <button class="btn-apply">Apply</button>
+          </div>
+
+          <div class="filter-section">
+            <div class="filter-title">Condition</div>
+            <ul class="filter-check-list">
+              <li><label class="filter-check"><input type="radio" name="condition" checked /> Any</label></li>
+              <li><label class="filter-check"><input type="radio" name="condition" /> Refurbished</label></li>
+              <li><label class="filter-check"><input type="radio" name="condition" /> Brand new</label></li>
+              <li><label class="filter-check"><input type="radio" name="condition" /> Old items</label></li>
+            </ul>
+          </div>
+
+          <div class="filter-section" style="border-bottom:none;">
+            <div class="filter-title">Ratings</div>
+            <ul class="filter-check-list">
+              <li>
+                <label class="filter-check">
+                  <input type="checkbox" />
+                  <span class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                </label>
+              </li>
+              <li>
+                <label class="filter-check">
+                  <input type="checkbox" />
+                  <span class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></span>
+                </label>
+              </li>
+              <li>
+                <label class="filter-check">
+                  <input type="checkbox" />
+                  <span class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i></span>
+                </label>
+              </li>
+              <li>
+                <label class="filter-check">
+                  <input type="checkbox" />
+                  <span class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i></span>
+                </label>
+              </li>
+            </ul>
+          </div>
+
+        </aside>
+
+        <!-- PRODUCTS AREA -->
+        <div class="products-area flex-grow-1">
+
+          <!-- Results bar -->
+          <div class="results-bar">
+            <div class="results-info">
+              <span class="results-count">12,911 items</span> in
+              <span class="results-category">Mobile accessory</span>
+            </div>
+            <div class="results-controls">
+              <label class="verified-check">
+                <input type="checkbox" checked /> Verified only
+              </label>
+              <select class="sort-select">
+                <option>Featured</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Newest First</option>
+                <option>Best Rated</option>
+              </select>
+              <div class="view-toggle">
+                <button class="view-btn active" id="listViewBtn" title="List view"><i class="bi bi-list-ul"></i></button>
+                <button class="view-btn" id="gridViewBtn" title="Grid view"><i class="bi bi-grid-3x3-gap"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product list -->
+          <div class="product-list list-view" id="productList">
+
+            <!-- Card 1 -->
+            <div class="product-list-card">
+              <div class="plc-image">
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=180&h=180&fit=crop" alt="Canon Creos GDS 2000" />
+              </div>
+              <div class="plc-body">
+                <a href="products-detail.html?title=Canon+Creos+GDS+2000%2C+Black+10x+zoom&img=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1511707171634-5f897ff02aa9%3Fw%3D600%26h%3D600%26fit%3Dcrop&price=%24998.00" class="plc-title">Canon Creos GDS 2000, Black 10x zoom</a>
+                <div class="plc-rating">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                  <span class="rating-count">7.5 &nbsp;&nbsp; 154 orders</span>
+                  <span class="free-shipping"><i class="bi bi-truck"></i> Free Shipping</span>
+                </div>
+                <p class="plc-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="products-detail.html?title=GoPro+HERO6+4K+Action+Camera+-+Black&img=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1592750475338-74b7b21085ab%3Fw%3D600%26h%3D600%26fit%3Dcrop&price=%24998.00" class="plc-view-link">View details</a>
+              </div>
+              <div class="plc-price-col">
+                <div class="plc-price">$998.00</div>
+                <div class="plc-old-price">$1,128.00</div>
+                <button class="plc-wishlist"><i class="bi bi-heart"></i></button>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="product-list-card">
+              <div class="plc-image">
+                <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=180&h=180&fit=crop" alt="GoPro HERO6 4K" />
+              </div>
+              <div class="plc-body">
+                <a href="products-detail.html?title=Laptop+Pro+X1+Carbon+Slim+Edition&img=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1496181133206-80ce9b88a853%3Fw%3D600%26h%3D600%26fit%3Dcrop&price=%24998.00" class="plc-title">GoPro HERO6 4K Action Camera - Black</a>
+                <div class="plc-rating">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                  <span class="rating-count">7.5 &nbsp;&nbsp; 155 orders</span>
+                  <span class="free-shipping"><i class="bi bi-truck"></i> Free Shipping</span>
+                </div>
+                <p class="plc-desc">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+                <a href="products-detail.html?title=Smart+Watch+Series+6+-+Silver&img=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1523275335684-37898b6baf30%3Fw%3D600%26h%3D600%26fit%3Dcrop&price=%24998.00" class="plc-view-link">View details</a>
+              </div>
+              <div class="plc-price-col">
+                <div class="plc-price">$998.00</div>
+                <div class="plc-old-price">$1,128.00</div>
+                <button class="plc-wishlist"><i class="bi bi-heart"></i></button>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="product-list-card">
+              <div class="plc-image">
+                <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=180&h=180&fit=crop" alt="Laptop Pro" />
+              </div>
+              <div class="plc-body">
+                <a href="products-detail.html?title=Sony+WH-1000XM4+Wireless+Headphones&img=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Fw%3D600%26h%3D600%26fit%3Dcrop&price=%24998.00" class="plc-title">GoPro HERO6 4K Action Camera - Black</a>
+                <div class="plc-rating">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                  <span class="rating-count">7.5 &nbsp;&nbsp; 155 orders</span>
+                  <span class="free-shipping"><i class="bi bi-truck"></i> Free Shipping</span>
+                </div>
+                <p class="plc-desc">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+                <a href="products-detail.html?title=MacBook+Pro+14+Space+Gray&img=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1517336714731-489689fd1ca8%3Fw%3D600%26h%3D600%26fit%3Dcrop&price=%24998.00" class="plc-view-link">View details</a>
+              </div>
+              <div class="plc-price-col">
+                <div class="plc-price">$998.00</div>
+                <div class="plc-old-price">$1,128.00</div>
+                <button class="plc-wishlist"><i class="bi bi-heart"></i></button>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="product-list-card">
+              <div class="plc-image">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=180&h=180&fit=crop" alt="Smart Watch" />
+              </div>
+              <div class="plc-body">
+                <a href="products-detail.html" class="plc-title">GoPro HERO6 4K Action Camera - Black</a>
+                <div class="plc-rating">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                  <span class="rating-count">7.5 &nbsp;&nbsp; 155 orders</span>
+                  <span class="free-shipping"><i class="bi bi-truck"></i> Free Shipping</span>
+                </div>
+                <p class="plc-desc">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+                <a href="products-detail.html" class="plc-view-link">View details</a>
+              </div>
+              <div class="plc-price-col">
+                <div class="plc-price">$998.00</div>
+                <div class="plc-old-price">$1,128.00</div>
+                <button class="plc-wishlist"><i class="bi bi-heart"></i></button>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="product-list-card">
+              <div class="plc-image">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=180&h=180&fit=crop" alt="Headphones" />
+              </div>
+              <div class="plc-body">
+                <a href="products-detail.html" class="plc-title">GoPro HERO6 4K Action Camera - Black</a>
+                <div class="plc-rating">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                  <span class="rating-count">7.5 &nbsp;&nbsp; 155 orders</span>
+                  <span class="free-shipping"><i class="bi bi-truck"></i> Free Shipping</span>
+                </div>
+                <p class="plc-desc">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+                <a href="products-detail.html" class="plc-view-link">View details</a>
+              </div>
+              <div class="plc-price-col">
+                <div class="plc-price">$998.00</div>
+                <div class="plc-old-price">$1,128.00</div>
+                <button class="plc-wishlist"><i class="bi bi-heart"></i></button>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="product-list-card">
+              <div class="plc-image">
+                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=180&h=180&fit=crop" alt="MacBook" />
+              </div>
+              <div class="plc-body">
+                <a href="products-detail.html" class="plc-title">GoPro HERO6 4K Action Camera - Black</a>
+                <div class="plc-rating">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                  <span class="rating-count">7.5 &nbsp;&nbsp; 155 orders</span>
+                  <span class="free-shipping"><i class="bi bi-truck"></i> Free Shipping</span>
+                </div>
+                <p class="plc-desc">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+                <a href="products-detail.html" class="plc-view-link">View details</a>
+              </div>
+              <div class="plc-price-col">
+                <div class="plc-price">$998.00</div>
+                <div class="plc-old-price">$1,128.00</div>
+                <button class="plc-wishlist"><i class="bi bi-heart"></i></button>
+              </div>
+            </div>
+
+          </div><!-- /#productList -->
+
+          <!-- Pagination -->
+          <div class="pagination-bar">
+            <div class="show-per-page">
+              Show
+              <select class="per-page-select">
+                <option>10</option>
+                <option>20</option>
+                <option>50</option>
+              </select>
+            </div>
+            <nav>
+              <ul class="pagination mb-0">
+                <li class="page-item disabled"><a class="page-link" href="#"><i class="bi bi-chevron-left"></i></a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-right"></i></a></li>
+              </ul>
+            </nav>
+          </div>
+
+        </div><!-- /.products-area -->
+      </div>
+    </div>
+  </main>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter-section">
+    <div class="container-xl">
+      <h3>Subscribe on our newsletter</h3>
+      <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+      <form class="newsletter-form" onsubmit="return false;">
+        <input type="email" placeholder="✉  Email" />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container-xl">
+      <div class="row g-4">
+        <div class="col-lg-2 col-md-4">
+          <div class="brand-footer"><div class="logo-icon"><i class="bi bi-bag-fill"></i></div>Brand</div>
+          <p>Best information about the company goes here but now lorem ipsum is</p>
+          <div class="footer-social">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4"><h5>About</h5><ul><li><a href="#">About Us</a></li><li><a href="#">Find store</a></li><li><a href="#">Categories</a></li><li><a href="#">Blogs</a></li></ul></div>
+        <div class="col-lg-2 col-md-4"><h5>Partnership</h5><ul><li><a href="#">About Us</a></li><li><a href="#">Find store</a></li><li><a href="#">Categories</a></li><li><a href="#">Blogs</a></li></ul></div>
+        <div class="col-lg-2 col-md-4"><h5>Information</h5><ul><li><a href="#">Help Center</a></li><li><a href="#">Money Refund</a></li><li><a href="#">Shipping</a></li><li><a href="#">Contact us</a></li></ul></div>
+        <div class="col-lg-2 col-md-4"><h5>For users</h5><ul><li><a href="#">Login</a></li><li><a href="#">Register</a></li><li><a href="#">Settings</a></li><li><a href="#">My Orders</a></li></ul></div>
+        <div class="col-lg-2 col-md-4">
+          <h5>Get app</h5>
+          <div class="footer-app-btns">
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/180px-Download_on_the_App_Store_Badge.svg.png" alt="App Store" style="height:38px;" /></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/180px-Google_Play_Store_badge_EN.svg.png" alt="Google Play" style="height:38px;" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2023 Ecommerce.</p>
+        <p class="d-flex align-items-center gap-2">🇺🇸 English <i class="bi bi-chevron-up" style="font-size:10px;"></i></p>
+      </div>
+    </div>
+  </footer>
+
+</div><!-- /#page-wrapper -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const listBtn = document.getElementById('listViewBtn');
+  const gridBtn = document.getElementById('gridViewBtn');
+  const productList = document.getElementById('productList');
+  listBtn.addEventListener('click', () => {
+    listBtn.classList.add('active');
+    gridBtn.classList.remove('active');
+    productList.classList.remove('grid-view');
+    productList.classList.add('list-view');
+  });
+  gridBtn.addEventListener('click', () => {
+    gridBtn.classList.add('active');
+    listBtn.classList.remove('active');
+    productList.classList.add('grid-view');
+    productList.classList.remove('list-view');
+  });
+});
+</script>
+</body>
+</html>
